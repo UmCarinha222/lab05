@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+float calculateHypotenuse(float a, float b);
+
+void main()
+{
+    float a, b;
+
+    scanf("%f %f", &a, &b);
+    printf("%.2f\n", calculateHypotenuse(a, b));
+}
+
+float calculateHypotenuse(float a, float b)
+{
+    return sqrt(a * a + b * b);
+}
