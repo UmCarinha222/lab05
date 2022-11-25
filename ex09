@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+float cylinderVolume(float radius, float height);
+
+void main()
+{
+    float radius, height;
+
+    scanf("%f %f", &radius, &height);
+    printf("%.2f\n", cylinderVolume(radius, height));
+}
+
+float cylinderVolume(float radius, float height)
+{
+    return 3.141592 * radius * radius * height;
+}
