@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void formatDate(int day, int month, int year);
+
+void main()
+{
+    int day, month, year;
+
+    scanf("%d/%d/%d", &day, &month, &year);
+    formatDate(day, month, year);
+}
+
+void formatDate(int day, int month, int year)
+{
+    char* months[] = {"janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"};
+
+    printf("%d de %s de %d\n", day, months[month - 1], year);
+}
