@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int convertToSeconds(int h, int min, int sec);
+
+void main()
+{
+    int h, min, sec;
+
+    scanf("%d:%d:%d", &h, &min, &sec);
+    printf("%d\n", convertToSeconds(h, min, sec));
+}
+
+int convertToSeconds(int h, int min, int sec)
+{
+    return h * 3600 + min * 60 + sec;
+}
