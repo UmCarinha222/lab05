@@ -8,8 +8,8 @@ void main()
 
     scanf("%d", &number);
     
-    if (checkPerfectSquare(number)) printf("É um quadrado perfeito\n");
-    else printf("Não é um quadrado perfeito\n");
+    if (checkPerfectSquare(number)) printf("E um quadrado perfeito\n");
+    else printf("Nao e um quadrado perfeito\n");
 }
 
 int checkPerfectSquare(int number)
