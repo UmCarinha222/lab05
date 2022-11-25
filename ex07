@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+float convertToFahrenheit(float celsius);
+
+void main()
+{
+    float celsius;
+
+    scanf("%f", &celsius);
+    printf("%.2f\n", convertToFahrenheit(celsius));
+}
+
+float convertToFahrenheit(float celsius)
+{
+    return celsius * (9.0 / 5.0) + 32.0;
+}
