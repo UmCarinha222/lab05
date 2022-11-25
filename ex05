@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+float sphereVolume(float rad);
+
+void main()
+{
+    float rad;
+
+    scanf("%f", &rad);
+    printf("%.2f\n", sphereVolume(rad));
+}
+
+float sphereVolume(float rad)
+{
+    return (4.0 / 3.0) * 3.14159 * rad * rad * rad;
+}
