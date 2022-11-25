@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+void calculateConsumption(float distance, float liters);
+
+void main()
+{
+    float distance, liters;
+
+    scanf("%f %f", &distance, &liters);
+    calculateConsumption(distance, liters);
+}
+
+void calculateConsumption(float distance, float liters)
+{
+    float consumption = distance / liters;
+
+    if (consumption < 8)
+    {
+        printf("Venda o carro!\n");
+    }
+    else if (consumption >= 8 && consumption <= 14)
+    {
+        printf("Econômico!\n");
+    }
+    else
+    {
+        printf("Super econômico!\n");
+    }
+}
