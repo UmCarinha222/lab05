@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int sumDigits(int number);
+
+void main()
+{
+    int number;
+
+    scanf("%d", &number);
+    if (number > 0)
+        printf("%d\n", sumDigits(number));
+    else
+        printf("Número inválido\n");
+}
+
+int sumDigits(int number)
+{
+    int sum = 0;
+
+    while (number > 0)
+    {
+        sum += number % 10;
+        number /= 10;
+    }
+
+    return sum;
+}
